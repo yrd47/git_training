@@ -1,1 +1,2 @@
-# git_training
+# git_trainig
+这是一个练习使用git的仓库
