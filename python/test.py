@@ -1,0 +1,6 @@
+print ('1+2')
+print(1+2)
+print('string'+"    ddd")
+print(1. + .1)
+print(None)
+print('whats\' wrong')
