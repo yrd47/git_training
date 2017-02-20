@@ -1,10 +1,10 @@
 package training;
 
-public class test {
+public class ThreadTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(Integer.valueOf(9));
+
 	}
-	
+
 }
