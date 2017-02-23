@@ -28,6 +28,9 @@ public class simpleCase {
 		System.out.println(value);
 		System.out.println(Long.toBinaryString(value));
 		System.out.println((value - (value >> 23 << 23)) >> 18);
+		Long test = Long.valueOf("1209235876687921277");
+		String result = Long.toBinaryString(test);
+		System.out.println(result);
 	}
 	
 	public void case4() {
