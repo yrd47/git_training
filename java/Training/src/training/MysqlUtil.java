@@ -12,14 +12,14 @@ import java.util.Random;
 
 public class MysqlUtil {
 	
-//	public static final String url = "jdbc:mysql://10.101.7.53:3306/daltestdb";
-//	public static final String user = "daltest";  
-//  public static final String password = "123456"; 
-	public static final String url = "jdbc:mysql://10.103.101.158:6109/napos_shop-arch_gzs_group";
+	public static final String url = "jdbc:mysql://10.101.7.53:3306/gzstestdb";
+	public static final String user = "daltest";  
+    public static final String password = "123456"; 
+//	public static final String url = "jdbc:mysql://10.103.101.158:6109/napos_shop-arch_gzs_group";
 //	public static final String url = "jdbc:mysql://10.104.105.61:6109/napos_shop-arch_gzs_group";
     public static final String driver = "com.mysql.jdbc.Driver";   
-    public static final String user = "beta_multi_user";  
-    public static final String password = "YZn5oM3q9wBGW4mCcbKj"; 
+//  public static final String user = "beta_multi_user";  
+//  public static final String password = "YZn5oM3q9wBGW4mCcbKj"; 
 	
 	public static Connection connectMysql() throws ClassNotFoundException, SQLException{   
 			Class.forName(driver);  
@@ -35,17 +35,18 @@ public class MysqlUtil {
 		StringBuffer stringBuffer = new StringBuffer("");
 		Connection conn = MysqlUtil.connectMysql();
 		Statement statement = conn.createStatement();
-//		String sql = "select count(*) from restaurant limit 1;";
-		String sql = "select id,oid,latitude,longitude,city_id from restaurant";
+		String sql = "select shop_id,shard_id from gzs_shop_b;";
+//		String sql = "select id,oid,latitude,longitude,city_id from restaurant";
 		ResultSet rs = statement.executeQuery(sql);
 		int i = 0;
 		while(rs.next()){
-			stringBuffer.append(rs.getString("id")+","+rs.getString("oid")+","+rs.getString("latitude")+","+rs.getString("longitude")+","+rs.getString("city_id")+"\n");
+//			stringBuffer.append(rs.getString("id")+","+rs.getString("oid")+","+rs.getString("latitude")+","+rs.getString("longitude")+","+rs.getString("city_id")+"\n");
+			stringBuffer.append(rs.getString("shop_id")+","+rs.getString("shard_id")+"\n");
 			i++;
 		}
 		System.out.println(i);
 		try{
-			FileWriter writer = new FileWriter("/Users/yrd/Downloads/alta.txt");
+			FileWriter writer = new FileWriter("/Users/yrd/Downloads/sdk1.txt");
 			BufferedWriter bufferedWriter = new BufferedWriter(writer);
 			bufferedWriter.write(stringBuffer.toString());			
 			bufferedWriter.close();

@@ -6,6 +6,7 @@ public class Binary {
 		Long test = Long.valueOf("1209235876687921277");
 		String result = Long.toBinaryString(test);
 		System.out.println(result);
+		System.out.println(Double.MAX_VALUE);
 	}
 
 }
