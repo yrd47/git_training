@@ -1,9 +1,6 @@
-package training;
+package testng;
 
 import org.testng.annotations.*;
-
-import com.beust.testng.TestNG;
-
 import static org.testng.Assert.*;
 
 public class TestNGSimpleTest {
