@@ -27,5 +27,8 @@ def function():
 		print i
 
 if __name__ == '__main__':
-#	test()
-	function()
+	# test()
+	# function()
+	for name in dir(sys):
+		if name.startswith('s') and name.endswith('e'):
+			print(name)
