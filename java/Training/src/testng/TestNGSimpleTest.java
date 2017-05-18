@@ -11,5 +11,4 @@ public class TestNGSimpleTest {
 		System.out.println(str);
 		assertEquals("TestNG is working fine", str);
 	}
-	
 }
