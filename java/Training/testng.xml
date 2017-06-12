@@ -5,16 +5,26 @@
       <!--
       <listener class-name="testng.IExecutionListener.ExecutionListener1" />
       <listener class-name="testng.IAnnotationTransformer.TestAnnotationTransformerListener" />
-      !-->
       <listener class-name="testng.SuiteListener.SuiteListener" />
+      <listener class-name="testng.ITestListener.TestListener" />
+      !-->
+      <listener class-name="testng.ITestListener.TestListener" />
   </listeners>
   <test name="test1">
     <classes>
         <!--
        <class name="testng.TestNGSimpleTest"/>
        <class name="testng.IAnnotationTransformer.TestAnnotationTransformerExample" />
-        !-->
-        <class name="testng.SuiteListener.SuiteListenerExample" />
+       <class name="testng.SuiteListener.SuiteListenerExample" />
+       <class name="testng.ITestListener.TestListenerExample" />
+       !-->
+       <class name="testng.ITestListener.TestListenerExample" />
     </classes>
   </test>
+  <test name="test2">
+      <classes>
+          <class name="testng.IReporter.ReporterListenerExample"/>
+      </classes>
+  </test>
+
 </suite>

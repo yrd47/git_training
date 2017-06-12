@@ -1,0 +1,4 @@
+testng.IReporter.ReporterListenerExample testAssert1 1495526603216 1495526603241 SUCCESS
+testng.IReporter.ReporterListenerExample testAssert1 1495526603242 1495526603243 SUCCESS
+testng.IReporter.ReporterListenerExample testAssert2 1495526603243 1495526603243 SUCCESS
+testng.IReporter.ReporterListenerExample testAssert3 1495526603246 1495526603246 SKIP
