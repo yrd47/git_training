@@ -1,0 +1,34 @@
+Naming Conventions(公约)
+ Package names
+	Package names should be all lower case without underscores or other special characters.
+	Package names begin with the reversed authority part of the web address of the company of the developer. This part can be followed a by project/program structure dependent package substructure.
+	Don’t use plural form. Follow the convention of the standard API which uses for instance java.lang.annotation and not java.lang.annotations.
+	Examples: com.yourcompany.widget.button, com.yourcompany.core.api.
+ Class,Interface and Enum names
+	Class and enum names should typically be nouns(名词).
+	Interface names should typically be nouns or adjectives ending with …able.
+	Use mixed case with the first letter in each word in upper case.		CamelCase
+	Match the regular expression ^[A-Z][a-zA-Z0-9]*$ .
+	Use whole words and avoid using abbreviations(缩略形式) unless the abbreviation is more widely used than the long form.
+	Format an abbreviation as a word if the it is part of a longer class name.
+	Examples: ArrayList, BigInteger, ArrayIndexOutOfBoundsException, Iterable.
+ Method names
+	Method names should typically be verbs or other descriptions of actions
+	They should match the regular expression ^[a-z][a-zA-Z0-9]*$.
+	Use mixed case with the first letter in lower case.
+	Examples: toString, hashCode
+ Variables
+	Variable names should be in mixed case with the first letter in lower case
+	Match the regular expression ^[a-z][a-zA-Z0-9]*$
+	Examples: elements, currentIndex
+ Constant
+	Constants (static final fields whose content is immutable, by language rules or by convention) should be named with all capital letters and underscore (_) to separate words.
+	Match the regular expression ^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$
+	Examples: BUFFER_SIZE, MAX_LEVEL
+
+Class Structure
+Class members should be ordered as follows:
+	1.Fields (in order of public, protected and private)
+	2.Constructors
+	3.Factory methods
+	4.Other Methods (in order of public, protected and private)
