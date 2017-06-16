@@ -1,0 +1,23 @@
+/build/
+/bin/
+/target/
+src/main/webapp/execution/bower_components/*
+*.log
+*.log.*
+
+.project
+.classpath
+.settings
+.gradle
+.metadata
+.eclipse-pmd
+.pmd
+
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear
+.idea
+*.iml
