@@ -9,11 +9,11 @@ import java.sql.Statement;
 public class JDBCBigresultTest {
 	   // JDBC driver name and database URL
 	   static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	   static final String DB_URL = "jdbc:mysql://192.168.80.19:9803/eos_group?useUnicode=true&autocommit=false";
+	   static final String DB_URL = "jdbc:mysql://1/eos_group?useUnicode=true&autocommit=false";
 
 	   // Database credentials
-	   static final String USER = "dal_admin";
-	   static final String PASS = "root";
+	   static final String USER = "";
+	   static final String PASS = "";
 
 	   public static void main(String[] args) {
 	       Connection conn = null;
