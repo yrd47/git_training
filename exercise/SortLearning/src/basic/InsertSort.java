@@ -1,10 +1,12 @@
 package basic;
 
-import com.sun.accessibility.internal.resources.accessibility;
-
 public class InsertSort {
 	
 	/**
+	 * stable sort;in-place sort
+	 * 最优复杂度：输入数组已经排好序，复杂度为O(n),快排在这种情况下的复杂度为O(n^2)
+	 * 最差复杂度：输入数组为倒序，复杂度为O(n^2)
+	 * 适用：少量元素的数组
 	 * 基本思想：在要排序的一组书中，假设前面(n-1)[n>=2]个数已经是排好序的，现在要把第n个数插到前面的有序数中
 	 * @param args
 	 */
