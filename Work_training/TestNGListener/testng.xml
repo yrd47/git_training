@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1">
+  <listeners>
+      <listener class-name="testnglistener.ReporterListener" />
+  </listeners>
+  
+  <parameter name="suite-param" value="${suite-param}"/>
+  
+  <test name="test1">
+    <classes>
+       <class name="testng.ReporterListenerExample" />
+    </classes>
+  </test>
+  <test name="test2">
+      <classes>
+          <!--
+			<class name="testng.TestListenerExample"/>
+          -->
+      </classes>
+  </test>
+
+</suite>

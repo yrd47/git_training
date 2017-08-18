@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="testnglistener.ReporterListener"/>
+  </listeners>
+  <test name="test1">
+    <classes>
+      <class name="testng.ReporterListenerExample"/>
+    </classes>
+  </test> <!-- test1 -->
+  <test name="test2">
+    <classes>
+      <class name="testng.TestListenerExample"/>
+    </classes>
+  </test> <!-- test2 -->
+  <test name="test1(failed)">
+    <classes>
+      <class name="testng.ReporterListenerExample">
+        <methods>
+          <include name="testAssert3"/>
+        </methods>
+      </class> <!-- testng.ReporterListenerExample -->
+      <class name="testng.TestListenerExample">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testng.TestListenerExample -->
+    </classes>
+  </test> <!-- test1(failed) -->
+  <test name="test2(failed)">
+    <classes>
+      <class name="testng.TestListenerExample">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="t3"/>
+          <include name="t4"/>
+          <include name="t2"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testng.TestListenerExample -->
+    </classes>
+  </test> <!-- test2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,1 @@
+{"suiteName":"Suite1","startTime":"1495679102099","endTime":"1495679102099","status":"SUCCESS","testCaseDetails":{"tcClass":"testng.TestListenerExample","tcMethod":"t1","arguments":[]},"logs":["Test yrd"]}

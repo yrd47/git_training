@@ -1,0 +1,7 @@
+testng.ReporterListenerExample testAssert1 1495595208873 1495595208901 SUCCESS
+testng.ReporterListenerExample testAssert1 1495595208908 1495595208911 SUCCESS
+testng.ReporterListenerExample testAssert2 1495595208924 1495595208926 SUCCESS
+testng.ReporterListenerExample testAssert3 1495595208938 1495595208938 SKIP
+testng.TestListenerExample t1 1495595213994 1495595213995 SUCCESS
+testng.TestListenerExample t2 1495595213997 1495595213998 FAILURE
+testng.TestListenerExample t3 1495595214004 1495595214004 SKIP
