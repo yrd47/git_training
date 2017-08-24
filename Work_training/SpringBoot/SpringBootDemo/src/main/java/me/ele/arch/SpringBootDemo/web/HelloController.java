@@ -20,13 +20,13 @@ public class HelloController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping(value="/hello")
-    public String home(){
+    public String home() throws Exception{
         return "Hello World";
+//    	throw new Exception("发生错误");
     }
 
     @RequestMapping(value = "/fuck")
     public @ResponseBody User sayFuck(@RequestParam(value = "name" ,required = false , defaultValue = "Stranger") String name){
         return new User(counter.incrementAndGet(),String.format(tmeplate,name),12);
     }
-
 }
