@@ -1,0 +1,14 @@
+2.1 运用Spring Boot
+	 ReadingListApplication	
+	 	配置和启动引导
+	 	主要的Spring配置类
+	 	@SpringBootApplication	开启Spring的组件扫描和Spring Boot的自动配置功能
+	 	若需要Spring Boot自动配置之外的其他Spring配置，最好写到一个单独的@Configuration标注的类里
+2.2 使用起步依赖
+	排除传递依赖
+	maven <exclusions>
+	你在项目构建说明文件里增加的依赖会覆盖传递依赖引入的另一个依赖
+2.3 使用自动配置
+	@Entity注解表名它是一个JPA实体类，id属性加了@Id和@GeneratedValue注解，说明这个字段 是实体的唯一标识，并且这个字段的值是自动生成的
+	Spring Data JPA
+	通过扩展JpaRepository，ReadingListRepository直接继承了18个执行常用持久化操作的方法。JpaRepository是个泛型接口，有两个参数:仓库操作的领域对象类型，及其ID属性的 类型。此外，我还增加了一个findByReader()方法，可以根据读者的用户名来查找阅读列表
