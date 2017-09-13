@@ -14,9 +14,9 @@ public class TestCtrCommand {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String hostname = "10.101.7.54";
-		String username = "www-data";
-		String password = "1qaz@WSX" ;
+		String hostname = "";
+		String username = "";
+		String password = "" ;
 		
 		Connection connection = new Connection(hostname);
 		Session ssh = null;
