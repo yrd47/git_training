@@ -10,7 +10,7 @@ public class FileTest {
 	public static void main(String[] args) {
 		File source = new File("/Users/yrd/Desktop/node/apache-jmeter-2.13.tar.gz");
 		File dest = new File("/Users/yrd/Desktop/node/1");
-		FileCopy.fileChannelCopy(source, dest);
+		FileCopy.fileCopyWithTry(source, dest);
 	}
 
 }

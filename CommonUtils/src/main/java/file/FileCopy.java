@@ -31,11 +31,21 @@ public class FileCopy {
 			}
 		}
 		try {
-			source.deleteOnExit();
 			System.out.println("delete " + source);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void fileCopyWithTry(File source, File dest) {
+		try (FileInputStream fileInputStream = new FileInputStream(source);
+	             FileOutputStream fileOutputStream = new FileOutputStream(dest)) {
+	            FileChannel fileChannelIn = fileInputStream.getChannel();
+	            FileChannel fileChannelOut = fileOutputStream.getChannel();
+	            fileChannelIn.transferTo(0, fileChannelIn.size(), fileChannelOut);
+	        } catch (Exception e) {
+	            System.out.println(e.getMessage());
+	        }
 	}
 
 }
