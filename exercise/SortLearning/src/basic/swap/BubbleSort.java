@@ -1,4 +1,4 @@
-package basic;
+package basic.swap;
 
 public class BubbleSort {
 	
@@ -13,9 +13,6 @@ public class BubbleSort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] list = {1,9,3,2,5,6,7,4,10,8};
-		for (int i : list) {
-			System.out.println(i);
-		}
 		bubbleSort(list);
 		for (int i : list) {
 			System.out.println(i);

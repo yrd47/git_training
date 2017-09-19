@@ -1,4 +1,4 @@
-package basic;
+package basic.insert;
 
 public class InsertSort {
 	
@@ -13,9 +13,9 @@ public class InsertSort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] list = {1,3,2,5,6,7};
-		for (int i : list) {
-			System.out.println(i);
+		int[] list = {1,3,2,5,6,7,4};
+		if (list == null || list.length == 0) {
+			return;
 		}
 		insertSort(list);
 		for (int i : list) {
