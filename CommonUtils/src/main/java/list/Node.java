@@ -1,4 +1,4 @@
-package listexample;
+package list;
 
 public class Node {
 	

@@ -1,4 +1,4 @@
-package stringexample;
+package string;
 
 public class StringExample {
 
