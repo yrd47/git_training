@@ -1,11 +1,11 @@
-package programme_1;
+package smallprograms;
 
 import java.util.Scanner;
 
 /**
  * Created by yrd on 2017/5/10.
  */
-public class MyConverter2 {
+public class MyConverter {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
