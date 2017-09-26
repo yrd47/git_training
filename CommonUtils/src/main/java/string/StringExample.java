@@ -28,6 +28,7 @@ public class StringExample {
 		} else {
 			System.out.println("Runoob 字符串最后出现的位置：" + lastIndex);
 		}
+		System.out.println(string.replaceAll("Hello", "A").replaceAll("world", "B"));
 	}
 
 }
