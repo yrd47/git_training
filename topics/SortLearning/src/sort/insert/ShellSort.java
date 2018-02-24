@@ -1,4 +1,4 @@
-package basic.insert;
+package sort.insert;
 
 public class ShellSort {
 	

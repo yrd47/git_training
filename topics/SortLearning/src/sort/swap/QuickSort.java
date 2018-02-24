@@ -1,4 +1,4 @@
-package basic.swap;
+package sort.swap;
 
 public class QuickSort {
 

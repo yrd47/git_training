@@ -1,6 +1,4 @@
-package basic;
-
-import java.util.Iterator;
+package sort;
 
 public class MergeSort2 {
 	
