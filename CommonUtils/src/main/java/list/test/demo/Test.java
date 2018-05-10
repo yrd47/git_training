@@ -1,4 +1,6 @@
-package list.test;
+package list.test.demo;
+
+import list.test.linkedList.LinkList;
 
 public class Test {
 

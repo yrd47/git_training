@@ -1,4 +1,4 @@
-package list.test;
+package list.test.demo;
 
 public class SequenceList implements List {
 	

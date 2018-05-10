@@ -1,11 +1,32 @@
 package string;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StringExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringCompare();
-		SearchlastString();
+		stringBuffer();	
+//		join();
+//		StringCompare();
+//		SearchlastString();
+	}
+	
+	public static void stringBuffer() {
+		StringBuffer stringBuffer = new StringBuffer();
+		stringBuffer.append("111" + "\n");
+		stringBuffer.append("222" + "\n");
+		stringBuffer.append("333" + "\n");
+		System.out.println(stringBuffer);
+	}
+	
+	public static void  join() {
+		List<String> list = new ArrayList<>();
+		list.add("123");
+		list.add("222");
+		list.add("223");
+		System.out.println(String.join(";", list));
 	}
 	
 	public static void StringCompare() {

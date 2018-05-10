@@ -1,4 +1,7 @@
-package list.test;
+package list.test.linkedList;
+
+import list.test.demo.List;
+import list.test.demo.Node;
 
 public class LinkList implements List {
 	
@@ -23,10 +26,10 @@ public class LinkList implements List {
 		if (index == -1) {
 			return;
 		}
-		current = head.next;
+		current = head.getNext();
 		int i = 0;
 		while (current != null && i < index) {
-			current = current.next;
+			current = current.getNext();
 			i++;
 		}
 	}
@@ -50,7 +53,7 @@ public class LinkList implements List {
 			throw new Exception("参数错误");
 		}
 		index(index - 1);	//定位到要操作结点的前一个结点对象
-		current.setNext(new Node(object, current.next));
+		current.setNext(new Node(object, current.getNext()));
 		size++;
 	}
 
@@ -64,7 +67,7 @@ public class LinkList implements List {
 			throw new Exception("参数错误");
 		}
 		index(index - 1);
-		current.setNext(current.next.next);
+		current.setNext(current.getNext().getNext());
 		size--;
 	}
 

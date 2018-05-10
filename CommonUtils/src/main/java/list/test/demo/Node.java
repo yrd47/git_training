@@ -1,4 +1,4 @@
-package list.test;
+package list.test.demo;
 
 public class Node {
 	
@@ -10,6 +10,10 @@ public class Node {
 	//头结点的构造方法
 	public Node(Node nextval) {
 		this.next = nextval;
+	}
+	
+	public Node(Object element) {
+		this.element = element;
 	}
 	
 	//非头结点的构造方法
